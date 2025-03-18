@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-gray-100 py-12">
+    <section class="about-section">
         <div class="container mx-auto px-4">
             <div class="text-center mb-8">
                 <h1 class="text-4xl font-bold text-gray-800">About Me</h1>
@@ -7,7 +7,7 @@
             </div>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-8 md:mb-0">
-                    <img src="#" alt="Your Name" class="rounded-full shadow-lg w-64 h-64 mx-auto">
+                    <img src="#" alt="Your Name" class="profile-img">
                 </div>
                 <div class="md:w-2/3 md:pl-12">
                     <p class="text-gray-700 text-lg leading-relaxed">
@@ -29,5 +29,28 @@ export default {
 </script>
 
 <style scoped>
-/* Add any additional styling here */
+/* Prevent header overlap */
+.about-section {
+    padding: 120px 20px 40px; /* Adds top padding so content starts below the header */
+    background-color: #f7f7f7;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive spacing */
+@media (min-width: 768px) {
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
 </style>

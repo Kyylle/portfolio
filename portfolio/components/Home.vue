@@ -1,45 +1,97 @@
 <template>
-    <div class="home">
-        <header class="bg-gray-800 text-white py-6">
-            <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
-            <p class="text-lg mt-2">Full Stack Developer specializing in Python, JavaScript, Nuxt, Vue, and React</p>
-        </header>
-        <section class="about my-12">
-            <h2 class="text-3xl font-semibold">About Me</h2>
-            <p class="mt-4 text-gray-700">
-                I am a passionate full stack developer with experience in building dynamic and responsive web applications using modern technologies. My expertise lies in Python, JavaScript, Nuxt, Vue, and React.
-            </p>
-        </section>
-        <section class="skills my-12">
-            <h2 class="text-3xl font-semibold">Skills</h2>
-            <ul class="mt-4 flex flex-wrap justify-center">
-                <li class="bg-gray-200 text-gray-800 py-2 px-4 m-2 rounded">Python</li>
-                <li class="bg-gray-200 text-gray-800 py-2 px-4 m-2 rounded">JavaScript</li>
-                <li class="bg-gray-200 text-gray-800 py-2 px-4 m-2 rounded">Nuxt</li>
-                <li class="bg-gray-200 text-gray-800 py-2 px-4 m-2 rounded">Vue</li>
-                <li class="bg-gray-200 text-gray-800 py-2 px-4 m-2 rounded">React</li>
-            </ul>
-        </section>
-        <section class="projects my-12">
-            <h2 class="text-3xl font-semibold">Projects</h2>
-            <p class="mt-4 text-gray-700">Check out some of my projects below:</p>
-            <!-- Add project components or links here -->
-        </section>
-        <footer class="bg-gray-800 text-white py-4 mt-12">
-            <p>&copy; 2023 My Portfolio</p>
-        </footer>
-    </div>
-</template>
-
-<script>
-export default {
-    name: 'Home',
-};
-</script>
-
-<style scoped>
-.home {
-    text-align: center;
-    padding: 20px;
-}
-</style>
+    <section class="min-h-screen bg-gray-900 flex items-center pt-24">
+      <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
+        <!-- Left Text Content -->
+        <div class="text-center lg:text-left">
+          <h1 class="text-6xl font-bold text-white">Full Stack</h1>
+          <h1 class="text-7xl font-bold text-green-500 mt-2">Developer</h1>
+  
+          <!-- Typing Effect -->
+          <p class="text-gray-300 text-xl mt-2 h-8">
+            <span class="text-green-400">{{ displayText }}</span><span class="inline-block w-2 h-6 bg-white animate-blink"></span>
+          </p>
+  
+          <p class="text-gray-400 mt-4">Creating Innovative, Functional, and User-Friendly</p>
+          <p class="text-gray-400">Websites & Apps for Digital Solutions.</p>
+  
+          <!-- Tech Stack Badges -->
+          <div class="flex flex-wrap gap-4 mt-6 justify-center lg:justify-start">
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">Node.js</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">React</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">JavaScript</span>
+            <span class="bg-gray-800 text-white px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">Python</span>
+          </div>
+  
+          <!-- Buttons -->
+          <div class="flex gap-6 mt-8 justify-center lg:justify-start">
+            <button class="bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105">Projects</button>
+            <button class="bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105">Blog</button>
+            <button class="bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105">Contact</button>
+          </div>
+  
+          <!-- Social Icons -->
+          <div class="flex justify-center lg:justify-start gap-6 mt-8 text-white text-2xl cursor-pointer">
+            <i class="fab fa-instagram hover:text-green-400 transition"></i>
+            <i class="fab fa-github hover:text-green-400 transition"></i>
+            <i class="fab fa-facebook hover:text-green-400 transition"></i>
+          </div>
+        </div>
+  
+        <!-- Right Image -->
+        <div class="mt-10 lg:mt-0">
+          <img src="/public/images/fullstack-icon.png" alt="Full Stack Developer" class="max-w-sm drop-shadow-lg">
+        </div>
+      </div>
+    </section>
+  </template>
+  
+  <script setup>
+  import { ref, onMounted, onUnmounted } from "vue";
+  
+  const words = ["MERN Development", "Web Development", "Full Stack Development", "Backend Development"];
+  const displayText = ref("");
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  let typingSpeed = 100;
+  let intervalId = null;
+  
+  const typeEffect = () => {
+    const currentWord = words[wordIndex];
+  
+    if (!isDeleting) {
+      displayText.value = currentWord.substring(0, charIndex++);
+    } else {
+      displayText.value = currentWord.substring(0, charIndex--);
+    }
+  
+    if (!isDeleting && charIndex > currentWord.length) {
+      isDeleting = true;
+      clearInterval(intervalId);
+      setTimeout(() => (intervalId = setInterval(typeEffect, typingSpeed)), 1000); // Pause before deleting
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+    }
+  };
+  
+  onMounted(() => {
+    intervalId = setInterval(typeEffect, typingSpeed);
+  });
+  
+  onUnmounted(() => {
+    clearInterval(intervalId);
+  });
+  </script>
+  
+  <style scoped>
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  .animate-blink {
+    animation: blink 0.7s infinite;
+  }
+  </style>
+  
