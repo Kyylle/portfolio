@@ -3,19 +3,32 @@
       <nav class="container mx-auto flex justify-between items-center">
         <h1 class="text-xl font-bold">DevK</h1>
         <ul class="flex gap-6">
-          <li><a href="#home" class="hover:text-gray-400">Home</a></li>
-          <li><a href="#about" class="hover:text-gray-400">About</a></li>
-          <li><a href="#portfolio" class="hover:text-gray-400">Portfolio</a></li>
-          <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            <li v-for="section in sections" :key="section.id">
+            <a :href="'#' + section.id" @click.prevent="scrollToSection(section.id)" class="hover:text-gray-400">{{ section.label }}</a>
+            </li>
         </ul>
       </nav>
     </header>
   </template>
-  
+
   <script setup>
-  // No script needed unless you want dynamic behavior
+  import { ref } from 'vue';
+
+  const sections = ref([
+    { id: 'home', label: 'Home' },
+    { id: 'about', label: 'About' },
+    { id: 'portfolio', label: 'Portfolio' },
+    { id: 'contact', label: 'Contact' }
+  ]);
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   </script>
-  
+
   <style scoped>
   html {
     scroll-behavior: smooth;

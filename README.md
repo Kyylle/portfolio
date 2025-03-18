@@ -24,6 +24,6 @@ Welcome to my portfolio! This repository showcases my skills, projects, and acco
 
 ## Contact
 
-Feel free to reach out to me via [email](mailto:your.email@example.com) or connect with me on [LinkedIn](#).
+Feel free to reach out to me via [email](mailto:kylekhezierdaugdaug@gmail.com) or connect with me on [LinkedIn](#).
 
 Thank you for visiting my portfolio!
