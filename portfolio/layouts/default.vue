@@ -1,5 +1,6 @@
 <template>
   <div>
+    <CanvasCursor />
     <Header />
     <slot />
     <Footer />
@@ -9,4 +10,5 @@
 <script setup>
 import Header from "~/components/Header.vue";
 import Footer from "~/components/Footer.vue";
+import CanvasCursor from "~/components/CanvasCursor.vue";
 </script>

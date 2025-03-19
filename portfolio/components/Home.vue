@@ -1,18 +1,18 @@
 <template>
-    <section class="min-h-screen bg-gray-900 flex items-center pt-24">
-      <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
+    <section class="min-h-screen flex items-center pt-24">
+      <div class="container mx-auto px-10 flex flex-col lg:flex-row items-center justify-between">
         <!-- Left Text Content -->
         <div class="text-center lg:text-left">
-          <h1 class="text-6xl font-bold text-white">Full Stack</h1>
-          <h1 class="text-7xl font-bold text-green-500 mt-2">Developer</h1>
-  
+            <h1 class="text-6xl font-bold text-white drop-shadow-[0_0_1px_rgba(255,255,255,0.7)]">Full Stack</h1>
+            <h1 class="text-7xl font-bold text-[#00FD37] mt-2 drop-shadow-[0_0_4px_rgba(0,255,0,0.8)]">Developer</h1>
+            
           <!-- Typing Effect -->
           <p class="text-gray-300 text-xl mt-2 h-8">
-            <span class="text-green-400">{{ displayText }}</span><span class="inline-block w-2 h-6 bg-white animate-blink"></span>
+            <span class="text-[#00FD37]">{{ displayText }}</span><span class="inline-block w-2 h-6 bg-white animate-blink"></span>
           </p>
   
-          <p class="text-gray-400 mt-4">Creating Innovative, Functional, and User-Friendly</p>
-          <p class="text-gray-400">Websites & Apps for Digital Solutions.</p>
+          <p class="text-gray-200 mt-4">Creating Innovative, Functional, and User-Friendly</p>
+          <p class="text-gray-200">Websites & Apps for Digital Solutions.</p>
   
           <!-- Tech Stack Badges -->
           <div class="flex flex-wrap gap-4 mt-6 justify-center lg:justify-start">
@@ -31,9 +31,9 @@
   
           <!-- Social Icons -->
           <div class="flex justify-center lg:justify-start gap-6 mt-8 text-white text-2xl cursor-pointer">
-            <i class="fab fa-instagram hover:text-green-400 transition"></i>
-            <i class="fab fa-github hover:text-green-400 transition"></i>
-            <i class="fab fa-facebook hover:text-green-400 transition"></i>
+            <i class="fab fa-instagram hover:text-[#00FD37] transition hover:scale-105"></i>
+            <i class="fab fa-github hover:text-[#00FD37] transition hover:scale-105"></i>
+            <i class="fab fa-facebook hover:text-[#00FD37] transition hover:scale-105"></i>
           </div>
         </div>
   
@@ -48,7 +48,7 @@
   <script setup>
   import { ref, onMounted, onUnmounted } from "vue";
   
-  const words = ["MERN Development", "Web Development", "Full Stack Development", "Backend Development"];
+  const words = ["Machine Learning", "Web Development", "Full Stack Development", "Backend Development"];
   const displayText = ref("");
   let wordIndex = 0;
   let charIndex = 0;

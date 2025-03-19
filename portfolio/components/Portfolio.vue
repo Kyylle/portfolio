@@ -1,5 +1,5 @@
 <template>
-    <section class="portfolio-section">
+    <section class="portfolio-section pt-24">
         <div class="container mx-auto p-8">
             <h1 class="text-4xl font-bold mb-8 text-center">My Portfolio</h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -50,11 +50,6 @@ export default {
 </script>
 
 <style scoped>
-/* Prevent header overlap */
-.portfolio-section {
-    padding-top: 120px; /* Adds top padding so content starts below the fixed header */
-    background-color: #f7f7f7;
-}
 
 /* Responsive layout for portfolio */
 .container {

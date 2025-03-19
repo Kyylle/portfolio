@@ -7,8 +7,8 @@
     }"
   >
     <nav class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide text-white">DevK</h1>
-      <ul class="flex gap-6 text-lg md:text-xl font-medium text-white">
+      <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide text-white relative right-[-50px]">DevK</h1>
+      <ul class="flex gap-10 text-base md:text-l font-medium text-white relative left-[-50px]">
         <li v-for="section in sections" :key="section.id">
           <a
             :href="'#' + section.id"
