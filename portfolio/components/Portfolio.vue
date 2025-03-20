@@ -19,7 +19,7 @@
                 :class="[ 
                     'w-60 h-20 px-8 py-3 rounded-lg text-white font-semibold transition duration-300 hover:scale-[1.02]', 
                     activeTab === tab
-                    ? 'bg-[#00FD37] text-black'
+                    ? 'bg-gray-700 text-black'
                     : 'hover:bg-gray-700' 
                 ]"
                 >
@@ -114,6 +114,11 @@ export default {
         { name: "MongoDB", icon: "/techstack/mongodb.svg" },
         { name: "SQL", icon: "/techstack/sql.svg" },
         { name: "JavaScript", icon: "/techstack/js.svg" },
+        { name: "Node", icon: "/techstack/node.svg" },
+        { name: "HTML", icon: "/techstack/html.svg" },
+        { name: "CSS", icon: "/techstack/css.svg" },
+        { name: "Python", icon: "/techstack/python.svg" },
+        { name: "Express", icon: "/techstack/express.svg" },
       ],
     };
   },
