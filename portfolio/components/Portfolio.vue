@@ -30,7 +30,7 @@
       <!-- Projects Grid -->
       <div
         v-if="activeTab === 'Projects'"
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10"
       >
         <div
           v-for="project in projects"
