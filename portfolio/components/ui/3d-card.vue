@@ -37,7 +37,3 @@ const handleMouseLeave = () => {
     </div>
   </div>
 </template>
-
-<style scoped>
-/* Add any additional styles here */
-</style>

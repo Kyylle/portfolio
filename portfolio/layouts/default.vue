@@ -1,7 +1,6 @@
 <template>
   <div class="relative w-full min-h-screen bg-black overflow-hidden">
-    <GridBackground /> <!-- Ensure it's positioned correctly -->
-    
+    <GridBackground />
     <div class="relative z-10">
       <Header />
       <slot />

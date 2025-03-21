@@ -139,13 +139,11 @@ const form = ref({
   message: "",
 });
 
-// Handle form submission
 const submitForm = () => {
   console.log("Form submitted:", form.value);
   form.value = { name: "", email: "", phone: "", message: "" };
 };
 
-// Social media icons
 const socialIcons = [
   {
     name: "LinkedIn",

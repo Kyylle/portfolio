@@ -11,7 +11,6 @@
 
       <!-- About Me Content -->
       <div class="flex flex-col md:flex-row items-center">
-        <!-- Profile Image -->
         <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
           <img
             src="/public/images/profile_about_Me.png"
@@ -19,7 +18,6 @@
             class="w-48 h-48 sm:w-60 sm:h-60 md:w-[22rem] md:h-[22rem] object-contain rounded-lg shadow-lg"
           />
         </div>
-
         <!-- About Text -->
         <div class="md:w-2/3 md:pl-12">
           <p class="text-white text-2xl md:text-4xl leading-relaxed">

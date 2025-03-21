@@ -11,7 +11,6 @@
   </script>
   
   <style scoped>
-  /* Grid Background */
   .grid-bg {
     width: 100%;
     height: 100%;
