@@ -24,10 +24,20 @@
   
           <!-- Buttons -->
           <div class="flex gap-6 mt-8 justify-center lg:justify-start">
-            <button class="bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105">Projects</button>
-            <button class="bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105">Blog</button>
-            <button class="bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105">Contact</button>
-          </div>
+  <button class="relative bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105 
+                 after:absolute after:inset-0 after:bg-indigo-200/60 after:blur-2xl after:rounded-lg after:-z-10">
+    Projects
+  </button>
+  <button class="relative bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105 
+                 after:absolute after:inset-0 after:bg-indigo-500/50 after:blur-2xl after:rounded-lg after:-z-10">
+    Blog
+  </button>
+  <button class="relative bg-black text-white px-6 py-2 rounded shadow-lg transition hover:scale-105 
+                 after:absolute after:inset-0 after:bg-indigo-500/50 after:blur-2xl after:rounded-lg after:-z-10">
+    Contact
+  </button>
+</div>
+
   
           <!-- Social Icons -->
           <div class="flex justify-center lg:justify-start gap-6 mt-8 text-white text-2xl cursor-pointer">
