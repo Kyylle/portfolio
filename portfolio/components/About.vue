@@ -19,7 +19,7 @@
         </div>
 
         <!-- About Text -->
-        <div class="md:w-2/3 md:pl-12">
+        <div class="md:w-3/5 md:pl-12">
           <p class="text-white text-2xl md:text-4xl leading-relaxed">
             {{ introduction }}
           </p>
@@ -80,7 +80,7 @@ const profileImage = ref("/images/profile_about_Me.png");
 const introduction = ref("Hello, I’m");
 const fullName = ref("Kyle Khezier");
 const aboutDescription = ref(
-  "I started as the weakest E-rank hunter, barely surviving in dungeons while others looked down on me. But everything changed when I entered a mysterious double dungeon. After a near-death experience, I awakened a unique ability called the 'System,' allowing me to level up and grow stronger."
+  "I am a professional Full Stack Developer with a Bachelor's degree in Information and Technology. I specialize in designing and developing innovative web applications, combining front-end and back-end expertise to deliver seamless user experiences."
 );
 const buttonText = ref("View Projects");
 
