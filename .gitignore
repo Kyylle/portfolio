@@ -13,3 +13,7 @@ frontend/.env.test.local
 frontend/.env.production.local
 frontend/.env.development
 portfolio/.vscode/settings.json
+__pycache__/
+venv/
+portfolio-data/pyvenv.cfg
+portfolio-data/.env
