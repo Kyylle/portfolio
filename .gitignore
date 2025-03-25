@@ -14,3 +14,4 @@ frontend/.env.production.local
 frontend/.env.development
 portfolio/.vscode/settings.json
 portfolio-data/venv
+portfolio-data/.env
