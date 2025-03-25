@@ -15,18 +15,18 @@
           <div class="mb-6">
             <h3 class="text-lg font-bold">Address</h3>
             <p class="text-gray-400">
-              532, Tower-84, Space IT-Park, Sohna Road, Gurgaon-122018
+              Sangi, Tabunoc, Talisay City, Cebu
             </p>
           </div>
 
           <div class="mb-6">
             <h3 class="text-lg font-bold">Phone</h3>
-            <p class="text-gray-400">+91 913-919-3104</p>
+            <p class="text-gray-400">+63 981-413-9842</p>
           </div>
 
           <div class="mb-6">
             <h3 class="text-lg font-bold">Email</h3>
-            <p class="text-gray-400">info@nomazdigital.com</p>
+            <p class="text-gray-400">kylekhezierdaugdaug@gmail.com</p>
           </div>
 
           <!-- Social Icons -->
