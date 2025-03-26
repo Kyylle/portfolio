@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 
 from routes.about import router as about_router
-
+from routes.portfolio import router as portfolio_router
 load_dotenv()
 
 app = FastAPI(title="Portfolio API")
@@ -19,6 +19,7 @@ app.add_middleware(
 )
 
 app.include_router(about_router)
+app.include_router(portfolio_router)
 
 @app.get("/", summary="Root Endpoint")
 async def root():
