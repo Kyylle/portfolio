@@ -12,13 +12,13 @@
         </div>
         <div class="md:w-3/5 md:pl-12">
           <p class="text-white text-2xl md:text-4xl leading-relaxed">
-            {{ about.introduction }}
+            {{ intro }}
           </p>
           <h1 class="text-[#00FD37] text-5xl md:text-6xl font-bold leading-relaxed">
             {{ about.full_name }}
           </h1>
           <p class="text-white text-regular leading-relaxed mt-4">
-            {{ about.description }}
+            {{ about.description}}
           </p>
           <div class="mt-6 flex justify-center md:justify-start">
             <button
@@ -53,11 +53,20 @@ const aboutTitle = ref("About Me");
 const aboutSubtitle = ref(
   "Transforming Ideas and Building Innovative Digital Solutions"
 );
+
+const intro = ref("Hello, I'm");
+const fullname = ref("Kyle Khezier");
+const about_description = ref(["Need a robust web application? I offer full-stack development services, specializing in Vue.js, React, and Node.js.",
+  "With expertise in building dynamic and scalable platforms,",
+  "I ensure efficient and maintainable solutions.",
+  "I also provide UI/UX design using Figma to create intuitive and user-friendly interfaces,",
+  "delivering a seamless user experience."]);
+
 const buttonText = ref("View Projects");
 const statLabels = ref([
-  "YEARS OF EXPERIENCE",
-  "CERTIFICATES",
   "TOTAL PROJECTS",
+  "CERTIFICATES",
+  "YEARS OF EXPERIENCE",
 ]);
 
 const statDescriptions = ref([
@@ -67,13 +76,13 @@ const statDescriptions = ref([
 ]);
 
 const about = ref({
-  full_name: "",
-  introduction: "",
-  description: "",
-  profile_image: "",
-  total_projects: 0,
-  certificates: 0,
-  years_experience: 0,
+  intro: "" || intro,
+  full_name: "" || fullname,
+  description: "" || about_description.value.join(" "),
+  profile_image: "" || "/images/profile_about_Me.png",
+  total_projects: 0 || 3,
+  certificates: 0 || 2,
+  years_experience: 0 || 1,
 });
 
 const stats = computed(() => [
