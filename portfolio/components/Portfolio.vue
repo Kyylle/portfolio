@@ -109,22 +109,26 @@ export default {
       projects: [
         {
           id: 1,
-          name: "Project One",
-          description: "A modern and secure web application.",
-          image: "/projects/cha-hae-in.jpeg",
+          name: "PennyWise",
+          description: "An expense tracker app that tracks your daily expenses.",
+          image: "/projects/pennywise.png",
           techStack: [
-            { name: "Vue.js", icon: "/techstack/vue.svg" },
+            { name: "Javascript", icon: "/techstack/js.svg" },
             { name: "Tailwind CSS", icon: "/techstack/tailwind.svg" },
+            { name: "SQL", icon: "/techstack/sql.svg" },
+            { name: "C#", icon: "/techstack/csharp.svg" },
           ],
         },
         {
           id: 2,
-          name: "Project Two",
-          description: "A React-based dashboard system.",
-          image: "/projects/sung-jin-woo.jpeg",
+          name: "JobHub",
+          description: "A job portal app that connects job seekers and employers.",
+          image: "/projects/jobhub.png",
           techStack: [
             { name: "React", icon: "/techstack/react.svg" },
             { name: "Node.js", icon: "/techstack/node.svg" },
+            { name: "MongoDB", icon: "/techstack/mongodb.svg" },
+            { name: "Express", icon: "/techstack/express.svg" },
           ],
         },
       ],

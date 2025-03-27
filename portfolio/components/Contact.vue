@@ -8,8 +8,8 @@
         <div class="text-white">
           <h2 class="text-3xl font-extrabold mb-4">CONTACT</h2>
           <p class="mb-6 text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Have a question or want to work together? Feel free to send me a
+            message.
           </p>
 
           <div class="mb-6">
