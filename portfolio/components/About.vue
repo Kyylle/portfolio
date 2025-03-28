@@ -7,7 +7,7 @@
       </div>
       <div class="flex flex-col md:flex-row items-center">
         <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
-          <img src="/public/images/profile_about_Me.png.png" alt="Profile Image"
+          <img src="/public/images/profile_about_Me.png" alt="Profile Image"
             class="w-48 h-48 sm:w-60 sm:h-60 md:w-[22rem] md:h-[22rem] object-contain rounded-lg shadow-lg" />
         </div>
         <div class="md:w-3/5 md:pl-12">
