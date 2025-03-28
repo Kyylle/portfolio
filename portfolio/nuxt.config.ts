@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -6,19 +5,15 @@ export default defineNuxtConfig({
   css: ['@/assets/css/global.css'],
   plugins: ["~/plugins/fontawesome"],
 
-  ssr: false,
+  ssr: false, // Ensure static site generation (important for GitHub Pages)
   app: {
     head: {
       title: "Portfolio",
     },
-    baseURL: '/portfolio/' // Replace with your GitHub repo name
+    baseURL: '/portfolio/', 
+    cdnURL: '', 
   },
-  nitro: {
-    prerender: {
-      routes: ['/'] // Ensure the homepage is pre-rendered
-    }
-  },
-  
+
   runtimeConfig: {
     public: {
       apiBase: process.env.API_BASE_URL || "http://localhost:8000",

@@ -79,7 +79,7 @@ const about = ref({
   intro: "" || intro,
   full_name: "" || fullname,
   description: "" || about_description.value.join(" "),
-  profile_image: "" || "/images/profile_about_Me.png",
+  profile_image:"/images/profile_about_Me.png",
   total_projects: 0 || 2,
   certificates: 0 || 0,
   years_experience: 0 || 0,
